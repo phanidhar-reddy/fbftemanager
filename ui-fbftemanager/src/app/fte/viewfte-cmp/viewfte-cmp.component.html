@@ -52,12 +52,12 @@
 
             <ng-container matColumnDef="weekStDt">
                 <th mat-header-cell *matHeaderCellDef> Week St Date </th>
-                <td mat-cell *matCellDef="let element"> {{element.weekStDt}} </td>
+                <td mat-cell *matCellDef="let element"> {{element.weekStDt | date }} </td>
             </ng-container>
 
             <ng-container matColumnDef="weekEdDt">
                 <th mat-header-cell *matHeaderCellDef> Week End Date </th>
-                <td mat-cell *matCellDef="let element"> {{element.weekEdDt}} </td>
+                <td mat-cell *matCellDef="let element"> {{element.weekEdDt | date}} </td>
             </ng-container>
 
             <ng-container matColumnDef="ftesPerRosterCount">
